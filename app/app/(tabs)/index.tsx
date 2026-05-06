@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator } from "react-native";
 
-const API_URL = "https://idekitaixawnvuszisbk.supabase.co"; // 🔥 CAMBIA ESTO
+const API_URL = "https://move-api-i818.onrender.com"; // 🔥 CAMBIA ESTO
 
 export default function HomeScreen() {
   const [data, setData] = useState<any[]>([]);

@@ -1,3 +1,4 @@
+const authRoutes = require("./routes/auth");
 const express = require("express");
 const cors = require("cors");
 
@@ -5,6 +6,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use("/api/auth", authRoutes);
 
 const activitiesRoutes = require("./routes/activities");
 app.use("/api/activities", activitiesRoutes);
